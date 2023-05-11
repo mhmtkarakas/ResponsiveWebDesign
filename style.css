@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 7px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    background-color:#333 ;
+}
+/* Header Alani*/
+a{
+    text-decoration: none;
+}
+p{
+    padding: 1.6rem 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    height: 46rem;
+    background-blend-mode: darken;
+    z-index: 1;
+}
+header .bg-image{
+    position: absolute;
+    background-image: url(images/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+
+}
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Main Alani*/
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+#section-b{
+    padding: 2rem;
+}
+#section-b ul{
+    list-style: none;
+}
+#section-b li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1,5rem;
+}
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+#section-d .box{
+    padding: 5rem;
+
+}
+.content-box{
+    display: flex;
+    flex-direction: row;
+}
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+#section-d .box:last-child{
+    background-color: #333;
+}
+footer{
+   padding: 4rem; 
+   background: black;
+}
+footer a{
+    color: yellowgreen;
+}
+@media screen and (min-width: 400px){
+    html{
+        font-size: 7px;
+    }
+    .content-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px){
+    html{
+        font-size: 9px;
+    }
+    .content-box{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 12px;
+    }
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;  
+    }
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
